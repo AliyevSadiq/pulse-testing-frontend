@@ -1,0 +1,40 @@
+.advantage {
+  min-height: 473px;
+  padding: 70px 0 89px 0;
+  background-color: $light-white;
+
+  &__header {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: $light-black;
+  }
+
+  &__items {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 273px;
+    text-align: center;
+
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      color: $light-black;
+      margin-top: 30px;
+    }
+
+    &__descr {
+      margin-top: 20px;
+      font-weight: 300;
+      font-size: 14px;
+      color: $light-black;
+      a{
+        color: $dark-red;
+      }
+    }
+  }
+}

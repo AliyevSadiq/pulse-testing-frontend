@@ -1,0 +1,35 @@
+.slider {
+  padding: 150px 0 170px 0;
+
+  &__items {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+
+    .slick-prev,.slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -67px;
+      border: none;
+      background-color: $white;
+
+      img {
+        width: 30px;
+        height: 50px;
+      }
+    }
+
+    .slick-next {
+      right: -67px;
+      left: auto;
+    }
+  }
+
+}
+.slick-slide{
+  img{
+    display: block;
+    width: 100%;
+  }
+}
