@@ -35,6 +35,26 @@ $(document).ready(function () {
             $(this).parent().removeClass('catalog-item__list_active');
             $(this).parent().prev().addClass('catalog-item__content_active')
         }
+    })
 
+    //Modal
+    $('.button').on('click',function (e){
+       let attr=$(this).data('modal');
+       if (attr){
+           if($(this).hasClass('button_catalog')){
+               let selected_title=$(this).parent().siblings().find('.catalog-item__subtitle').text();
+               $(`#order .modal__descr`).text(selected_title);
+           }
+           $(`.overlay,#${attr}`).css("display", "flex")
+               .hide()
+               .fadeIn();
+       }
+
+    });
+
+    $('.modal__close').on('click',function (){
+        const parent=$(this).parent();
+        $('.overlay').fadeOut();
+        parent.fadeOut();
     })
 });
