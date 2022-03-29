@@ -57,4 +57,28 @@ $(document).ready(function () {
         $('.overlay').fadeOut();
         parent.fadeOut();
     })
+
+
+    //Validation
+
+    validateForm("#consultation form");
+    validateForm("#order form");
+    validateForm("#consultation-form");
+
+    function validateForm(form){
+        $(form).validate({
+            rules:{
+                name:"required",
+                phone:"required",
+                email:{
+                    required:true,
+                    email:true,
+                }
+            }
+        });
+    }
+
+    //input mask
+    $('input[name="phone"]').mask("+999-99-999-99-99")
+
 });

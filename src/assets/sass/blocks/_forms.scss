@@ -21,4 +21,14 @@
   &_mt26 {
     margin-top: 26px;
   }
+  .error{
+    text-align: center;
+    color:$dark-red;
+    margin-bottom: 10px;
+  }
+}
+#consultation-form {
+  .error{
+    color: $white;
+  }
 }
