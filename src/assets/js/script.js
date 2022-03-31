@@ -81,4 +81,6 @@ $(document).ready(function () {
     //input mask
     $('input[name="phone"]').mask("+999-99-999-99-99")
 
+
+    new WOW().init();
 });
